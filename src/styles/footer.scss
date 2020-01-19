@@ -10,12 +10,13 @@ footer {
     height: 80%;
     position: absolute;
     bottom: 0px;
-    right: 15%;
+    right: 20%; //1440 17% 1680 18%
 
     img {
       width: 100%;
       height: 100%;
       object-position: center 75px;
+      // media queries for 1440 85px 1680 80px
     }
   }
 }

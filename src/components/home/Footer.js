@@ -1,6 +1,6 @@
 import React from "react";
 
-import coffeeImg from "../assets/homepage/coffee.svg";
+import coffeeImg from "../../assets/homepage/coffee.svg";
 
 //icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
