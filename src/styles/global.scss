@@ -1,0 +1,42 @@
+// General Styles
+
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  color: $header;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Noto Sans", sans-serif;
+  color: $header;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+#App {
+  width: 100%;
+  // max-width: 1600px;
+  // margin: 0 auto;
+  .indented-container {
+    padding: 0 170px;
+  }
+}

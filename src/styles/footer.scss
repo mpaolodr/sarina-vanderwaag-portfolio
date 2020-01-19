@@ -1,0 +1,60 @@
+footer {
+  width: 100%;
+  height: 80vh;
+  margin-top: 100px;
+  position: relative;
+  background: $footer-bg;
+
+  figure {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 15%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-position: center 75px;
+    }
+  }
+}
+
+.footer-content {
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+
+  .footer-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 7.6rem;
+    margin-bottom: 40px;
+    font-family: "Noto Serif", serif;
+  }
+
+  .footer-desc {
+    width: 65%;
+    margin-bottom: 80px;
+    font-size: 1.8rem;
+  }
+
+  .social-links {
+    min-width: 150px;
+    width: 30%;
+    @include flex(space-between, center);
+
+    button {
+      background: $btn-bg;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $btn-bg;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  }
+} //FOOTER CONTENT ENDS HERE
