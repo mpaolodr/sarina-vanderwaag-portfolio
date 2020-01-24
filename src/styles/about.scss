@@ -4,10 +4,11 @@
   height: 90vh;
   @include flex(space-between, center);
   flex-direction: column;
+  padding-bottom: 20px;
 
   .profile-content {
     height: 40%;
-    width: 30%;
+    width: 40%;
     @include flex(space-evenly, flex-start);
     flex-direction: column;
 
@@ -23,7 +24,7 @@
       font-family: "Noto Sans", sans-serif;
       font-size: 2.8rem;
       line-height: 144%;
-      min-width: 700px;
+      width: 700px;
     }
   }
 
