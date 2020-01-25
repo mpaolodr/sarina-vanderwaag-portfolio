@@ -8,8 +8,7 @@
 
   .profile-content {
     height: 40%;
-    width: 60%;
-    min-width: 840px;
+    width: 65%;
     @include flex(space-evenly, flex-start);
     flex-direction: column;
 
@@ -67,13 +66,12 @@
 .tldr-container {
   background: $tldr-bg;
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   margin-top: 50px;
   @include flex(center, center);
 
   .tldr-content {
-    width: 60%;
-    min-width: 840px;
+    width: 65%;
     height: 70%;
 
     h2 {
@@ -82,6 +80,7 @@
       line-height: 6.5rem;
       color: white;
       height: 15%;
+      margin-bottom: 30px;
     }
   } //tldr content ends here
 
@@ -180,7 +179,6 @@
 
       .first-statement {
         font-size: 1.8rem;
-        line-height: 3.2rem;
         width: 70%;
       }
 
@@ -193,3 +191,50 @@
     }
   }
 } //tldr container ends here
+
+/*
+=================================================================================================================================
+========================================ABOUTME SECTION STYLES===================================================================
+=================================================================================================================================
+*/
+
+.aboutme-container {
+  width: 100%;
+  height: 60vh;
+  @include flex(center, center);
+
+  .aboutme-content {
+    width: 65%;
+    height: 70%;
+
+    .title-container {
+      height: 15%;
+      margin-bottom: 50px;
+
+      h2 {
+        font-size: 4.8rem;
+        line-height: 6.5rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: $bud;
+        font-family: "Noto Sans", sans-serif;
+      }
+    }
+
+    .details-container {
+      height: 80%;
+      @include flex(space-evenly, flex-start);
+      flex-direction: column;
+
+      p {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 1.6rem;
+        line-height: 3.1rem;
+      }
+    }
+  }
+} //aboutme container ends here
