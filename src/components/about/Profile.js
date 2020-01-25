@@ -35,7 +35,7 @@ const Profile = () => {
 
   return (
     <section className="profile-container">
-      <div className="profile-content">
+      <div className="profile-content indented-container">
         <h1 className="profile-title">Hi, I'm Sarina</h1>
         <p className="profile-desc">
           UX designer, sandwich afficionado and part dolphin. I create

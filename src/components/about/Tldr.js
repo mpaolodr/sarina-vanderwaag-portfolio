@@ -3,7 +3,7 @@ import React from "react";
 const Tldr = () => {
   return (
     <section className="tldr-container">
-      <div className="tldr-content">
+      <div className="tldr-content indented-container">
         <h2>tl;dr</h2>
 
         <div className="tldr-statements">

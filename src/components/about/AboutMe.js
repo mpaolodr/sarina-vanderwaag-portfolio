@@ -1,9 +1,12 @@
 import React from "react";
 
+// divider image
+import pattern from "../../assets/about/Pattern.svg";
+
 const AboutMe = () => {
   return (
     <section className="aboutme-container">
-      <div className="aboutme-content">
+      <div className="aboutme-content indented-container">
         <div className="title-container">
           <h2>Have more time?</h2>
           <p>2 min read</p>
@@ -29,6 +32,12 @@ const AboutMe = () => {
             our large family dinners for instance.
           </p>
         </div>
+      </div>
+      <div className="pattern-container">
+        <img src={pattern} alt="pattern" />
+      </div>
+      <div className="aboutme-continuation">
+        <div className="aboutme-content-continuation"></div>
       </div>
     </section>
   );

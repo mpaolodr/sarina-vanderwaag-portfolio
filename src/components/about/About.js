@@ -7,12 +7,10 @@ import AboutMe from "./AboutMe";
 
 const About = () => {
   return (
-    <main>
-      <div className="indented-container">
-        <Profile />
-        <Tldr />
-        <AboutMe />
-      </div>
+    <main className="about">
+      <Profile />
+      <Tldr />
+      <AboutMe />
     </main>
   );
 };
