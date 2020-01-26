@@ -8,7 +8,7 @@ import Footer from "./Footer.js";
 const Home = () => {
   return (
     <main>
-      <div className="indented-container">
+      <div className="home-indented-container">
         <HeroArea />
         <Gigapet />
         <Nuggets />

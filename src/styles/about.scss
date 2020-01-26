@@ -1,22 +1,16 @@
-// .about {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
 //PROFILE STYLES
 .profile-container {
   width: 100%;
-  // max-width: 1400px;
   height: 90vh;
   @include flex(space-between, center);
   flex-direction: column;
   padding-bottom: 20px;
 
   .profile-content {
-    height: 40%;
-    width: 80%;
-    @include flex(space-evenly, flex-start);
+    height: 30%;
+    width: 100%;
+    margin-top: 100px;
+    @include flex(space-around, flex-start);
     flex-direction: column;
 
     .profile-title {
@@ -24,14 +18,14 @@
       font-size: 6rem;
       line-height: 8.2rem;
       font-weight: bold;
-      text-align: right;
     }
 
     .profile-desc {
       font-family: "Noto Sans", sans-serif;
       font-size: 2.8rem;
-      line-height: 144%;
-      width: 76%;
+      line-height: 4rem;
+      width: 700px;
+      max-width: 750px;
     }
   }
 
@@ -78,7 +72,7 @@
   @include flex(center, center);
 
   .tldr-content {
-    width: 80%;
+    width: 100%;
     height: 70%;
 
     h2 {
@@ -107,7 +101,7 @@
 
     .first {
       .first-statement {
-        width: 15%;
+        width: 20%;
         max-width: 130px;
         font-size: 1.6rem;
         font-weight: 700;
@@ -186,7 +180,7 @@
 
       .first-statement {
         font-size: 1.8rem;
-        width: 70%;
+        width: 60%;
       }
 
       .second-statement {
@@ -212,12 +206,9 @@
   flex-direction: column;
 
   .aboutme-content {
-    width: 80%;
-    // max-width: 1400px !important; find another way of doing this
-    height: 70%;
+    width: 100%;
 
     .title-container {
-      height: 15%;
       margin-bottom: 50px;
 
       h2 {
@@ -245,7 +236,7 @@
         margin-bottom: 20px;
       }
     }
-  }
+  } // aboutme content ends here
 
   .pattern-container {
     margin: 100px 0;
@@ -257,6 +248,47 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
+    }
+  }
+
+  .aboutme-content-continuation {
+    @include flex(space-evenly, flex-start);
+    flex-direction: column;
+
+    p {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+      margin-bottom: 20px;
+    }
+
+    .pineapple-container {
+      margin: 80px auto;
+
+      img {
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .about-social-links {
+      margin: 100px 0;
+      min-width: 170px;
+      width: 20%;
+      @include flex(space-between, center);
+
+      button {
+        background: $btn-bg;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $btn-bg;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
     }
   }
 } //aboutme container ends here

@@ -35,9 +35,14 @@ p {
 #App {
   width: 100%;
 
-  .indented-container {
+  .home-indented-container {
     padding: 0 170px;
     max-width: 1600px;
     margin: 0 auto;
+  }
+
+  .about-indented-container {
+    padding: 0 340px;
+    max-width: 1600px;
   }
 }

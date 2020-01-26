@@ -9,7 +9,7 @@ import About from "./components/about/About.js";
 const App = () => {
   return (
     <div id="App">
-      <div className="indented-container">
+      <div className="home-indented-container">
         <Header />
       </div>
 
