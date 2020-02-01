@@ -1,0 +1,294 @@
+//PROFILE STYLES
+.profile-container {
+  width: 100%;
+  height: 90vh;
+  @include flex(space-between, center);
+  flex-direction: column;
+  padding-bottom: 20px;
+
+  .profile-content {
+    height: 30%;
+    width: 100%;
+    margin-top: 100px;
+    @include flex(space-around, flex-start);
+    flex-direction: column;
+
+    .profile-title {
+      font-family: "Noto Serif", serif;
+      font-size: 6rem;
+      line-height: 8.2rem;
+      font-weight: bold;
+    }
+
+    .profile-desc {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 2.8rem;
+      line-height: 4rem;
+      width: 700px;
+      max-width: 750px;
+    }
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: 40%;
+    position: relative;
+
+    .dots {
+      position: absolute;
+      bottom: 20px;
+    }
+
+    .carousel-item-padding-40-px {
+      height: 400px;
+    }
+
+    .img-container {
+      width: 90%;
+      height: 90%;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+  }
+} //PROFILE CONTAINER ENDS HERE
+
+/*
+=================================================================================================================================
+========================================TLDR SECTION STYLES===================================================================
+=================================================================================================================================
+*/
+
+.tldr-container {
+  background: $tldr-bg;
+  width: 100%;
+  height: 60vh;
+  margin-top: 50px;
+  @include flex(center, center);
+
+  .tldr-content {
+    width: 100%;
+    height: 70%;
+
+    h2 {
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 6.5rem;
+      color: white;
+      height: 15%;
+      margin-bottom: 30px;
+    }
+  } //tldr content ends here
+
+  .tldr-statements {
+    width: 100%;
+    height: 85%;
+
+    .row {
+      height: 17.5%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Noto-sans", sans-serif;
+      color: white;
+    }
+
+    .first {
+      .first-statement {
+        width: 20%;
+        max-width: 130px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2rem;
+      }
+
+      .second-statement {
+        width: 60%;
+        font-size: 2.9rem;
+        line-height: 3.6rem;
+        text-align: center;
+      }
+
+      .third-statement {
+        width: 20%;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+      }
+    } // first ends here
+
+    .second {
+      .first-statement {
+        width: 45%;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 2.4rem;
+      }
+
+      .flex-container {
+        @include flex(space-between, flex-end);
+        flex-direction: column;
+        width: 40%;
+        margin-right: 50px;
+
+        .second-statement {
+          font-size: 1.8rem;
+        }
+
+        .third-statement {
+          font-size: 1.2rem;
+        }
+      }
+    } //second ends here
+
+    .third {
+      justify-content: center;
+
+      p {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 3.6rem;
+      }
+    } // third ends here
+
+    .fourth {
+      justify-content: space-between;
+
+      .first-statement {
+        width: 35%;
+        margin-left: 50px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 2rem;
+      }
+
+      .second-statement {
+        width: 40%;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+      }
+    }
+
+    .last {
+      height: 30%;
+      justify-content: space-between;
+
+      .first-statement {
+        font-size: 1.8rem;
+        width: 60%;
+      }
+
+      .second-statement {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        margin-right: 30px;
+      }
+    }
+  }
+} //tldr container ends here
+
+/*
+=================================================================================================================================
+========================================ABOUTME SECTION STYLES===================================================================
+=================================================================================================================================
+*/
+
+.aboutme-container {
+  width: 100%;
+  padding: 100px 0;
+  @include flex(space-around, center);
+  flex-direction: column;
+
+  .aboutme-content {
+    width: 100%;
+
+    .title-container {
+      margin-bottom: 50px;
+
+      h2 {
+        font-size: 4.8rem;
+        line-height: 6.5rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: $bud;
+        font-family: "Noto Sans", sans-serif;
+      }
+    }
+
+    .details-container {
+      @include flex(space-evenly, flex-start);
+      flex-direction: column;
+
+      p {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 1.6rem;
+        line-height: 3.1rem;
+        margin-bottom: 20px;
+      }
+    }
+  } // aboutme content ends here
+
+  .pattern-container {
+    margin: 100px 0;
+    width: 100%;
+    height: 320px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .aboutme-content-continuation {
+    @include flex(space-evenly, flex-start);
+    flex-direction: column;
+
+    p {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+      margin-bottom: 20px;
+    }
+
+    .pineapple-container {
+      margin: 80px auto;
+
+      img {
+        object-fit: cover;
+        object-position: center center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .about-social-links {
+      margin: 100px 0;
+      min-width: 170px;
+      width: 20%;
+      @include flex(space-between, center);
+
+      button {
+        background: $btn-bg;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $btn-bg;
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+    }
+  }
+} //aboutme container ends here
